@@ -1,3 +1,5 @@
+"use client";
+
 import {
   NavigationMenu,
   NavigationMenuContent,
@@ -9,7 +11,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Button } from "@/components/ui/button";
 import * as React from "react";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Navbar() {

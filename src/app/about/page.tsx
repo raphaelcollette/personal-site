@@ -1,11 +1,8 @@
 import {
   Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+  CardContent
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 export default function AboutPage() {
   return (
@@ -25,7 +22,7 @@ export default function AboutPage() {
         <div>
           <h2 className="text-2xl font-semibold mb-4">About Me</h2>
           <p className="text-muted-foreground mb-2">
-            I'm Raphael Collette, an accounting, programming, and IT professional.
+            I&apos;m Raphael Collette, an accounting, programming, and IT professional.
           </p>
           <p className="text-muted-foreground mb-2">
             Currently a student at the <span className="text-[#FFCC33]">University of Minnesota</span>, I specialize in full-stack development, cloud infrastructure, and data-driven applications.
@@ -60,5 +57,5 @@ export default function AboutPage() {
         <Button variant="outline">Contact</Button>
       </section>
     </main>
-  )
+  );
 }

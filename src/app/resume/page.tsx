@@ -8,7 +8,6 @@ import {
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs"
-import Link from "next/link"
 
 export default function ResumePage() {
   return (

@@ -7,20 +7,33 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { Button }from "@/components/ui/button"
-import Link from "next/link";
+import { Button } from "@/components/ui/button";
 import * as React from "react";
-import { FaGithub, FaLinkedin } from "react-icons/fa"
+import { useRouter } from "next/router";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Navbar() {
+  const router = useRouter();
+
+  function navigate(href: string) {
+    router.push(href);
+  }
+
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-background text-foreground py-2">
       <div className="flex items-center justify-between px-4">
         {/* Left + Center combined */}
         <div className="flex items-center gap-6">
-          <Link href="/">
-            <div className="text-lg font-bold cursor-pointer select-none">rmc</div>
-          </Link>
+          <a
+            href="/"
+            onClick={(e) => {
+              e.preventDefault();
+              navigate("/");
+            }}
+            className="text-lg font-bold cursor-pointer select-none"
+          >
+            rmc
+          </a>
 
           <NavigationMenu viewport={false}>
             <NavigationMenuList>
@@ -33,19 +46,23 @@ export default function Navbar() {
                         <a
                           className="from-muted/50 to-muted flex h-full w-full flex-col justify-end rounded-md bg-gradient-to-b p-6 no-underline outline-none select-none focus:shadow-md"
                           href="/"
+                          onClick={(e) => {
+                            e.preventDefault();
+                            navigate("/");
+                          }}
                         >
                           <div className="mt-4 mb-2 text-lg font-medium">rmc</div>
                           <p className="text-muted-foreground text-sm leading-tight"></p>
                         </a>
                       </NavigationMenuLink>
                     </li>
-                    <ListItem href="/about" title="about me">
+                    <ListItem href="/about" title="about me" navigate={navigate}>
                       my background and motivations
                     </ListItem>
-                    <ListItem href="/skills" title="skills">
+                    <ListItem href="/skills" title="skills" navigate={navigate}>
                       python, js, linux
                     </ListItem>
-                    <ListItem href="/resume" title="resume">
+                    <ListItem href="/resume" title="resume" navigate={navigate}>
                       download resume as a pdf
                     </ListItem>
                   </ul>
@@ -57,7 +74,12 @@ export default function Navbar() {
                 <NavigationMenuContent>
                   <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                     {components.map((component) => (
-                      <ListItem key={component.title} title={component.title} href={component.href}>
+                      <ListItem
+                        key={component.title}
+                        title={component.title}
+                        href={component.href}
+                        navigate={navigate}
+                      >
                         {component.description}
                       </ListItem>
                     ))}
@@ -67,7 +89,15 @@ export default function Navbar() {
 
               <NavigationMenuItem>
                 <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-                  <Link href="/contact">Contact</Link>
+                  <a
+                    href="/contact"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      navigate("/contact");
+                    }}
+                  >
+                    Contact
+                  </a>
                 </NavigationMenuLink>
               </NavigationMenuItem>
             </NavigationMenuList>
@@ -103,7 +133,6 @@ export default function Navbar() {
     </nav>
   );
 }
-
 
 const components: { title: string; href: string; description: string }[] = [
   {
@@ -142,16 +171,22 @@ function ListItem({
   title,
   children,
   href,
+  navigate,
   ...props
-}: React.ComponentPropsWithoutRef<"li"> & { href: string }) {
+}: React.ComponentPropsWithoutRef<"li"> & { href: string; navigate: (href: string) => void }) {
   return (
     <li {...props}>
-      <NavigationMenuLink asChild>
-        <Link href={href}>
-          <div className="text-sm leading-none font-medium">{title}</div>
-          <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">{children}</p>
-        </Link>
-      </NavigationMenuLink>
+      <a
+        href={href}
+        onClick={(e) => {
+          e.preventDefault();
+          navigate(href);
+        }}
+        className="text-sm leading-none font-medium block"
+      >
+        <div>{title}</div>
+        <p className="text-muted-foreground line-clamp-2 text-sm leading-snug">{children}</p>
+      </a>
     </li>
   );
 }

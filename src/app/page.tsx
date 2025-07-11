@@ -72,7 +72,7 @@ export default function Page() {
 
       {/* Row 3 */}
       <section className="flex flex-col justify-center items-center text-center min-h-[500px]">
-        <h2 className="text-3xl font-bold mb-4">Want to get a hold of me?</h2>
+        <h2 className="text-3xl font-bold mb-4">Want to get ahold of me?</h2>
         <Button variant="outline" className="cursor-pointer">Contact</Button>
       </section>
     </main>

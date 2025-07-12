@@ -38,19 +38,7 @@ export default function ResumePage() {
             </CardHeader>
             <CardContent className="space-y-6">
               <div>
-                <h3 className="font-semibold text-lg">Software Engineer – MyCompany</h3>
-                <p className="text-sm text-muted-foreground">Jan 2023 – Present</p>
-                <p className="mt-2 text-sm leading-relaxed">
-                  Built scalable APIs using Django and FastAPI. Integrated real-time features with WebSockets, and
-                  maintained CI/CD pipelines using Docker and GitHub Actions.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-lg">Backend Developer – Freelance</h3>
-                <p className="text-sm text-muted-foreground">2022</p>
-                <p className="mt-2 text-sm leading-relaxed">
-                  Developed RESTful APIs and admin dashboards for small businesses using Python, PostgreSQL, and React.
-                </p>
+                <h3 className="font-semibold text-lg">No professional experience yet!</h3>
               </div>
             </CardContent>
           </Card>
@@ -63,10 +51,10 @@ export default function ResumePage() {
             </CardHeader>
             <CardContent className="space-y-4">
               <div>
-                <h3 className="font-semibold text-lg">University of XYZ</h3>
-                <p className="text-sm text-muted-foreground">B.S. in Computer Science, 2019 – 2023</p>
+                <h3 className="font-semibold text-lg">University of Minnesota - Twin Cities</h3>
+                <p className="text-sm text-muted-foreground">B.S. in Accounting, MIS, 2024 – 2028</p>
                 <p className="mt-2 text-sm leading-relaxed">
-                  Coursework included Algorithms, Databases, Distributed Systems, and AI. Graduated with honors.
+                  Coursework included Python, R, Excel, and Financial Accounting.
                 </p>
               </div>
             </CardContent>

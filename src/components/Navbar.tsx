@@ -41,9 +41,6 @@ export default function Navbar() {
                         </Link>
                       </NavigationMenuLink>
                     </li>
-                    <ListItem href="/about" title="about me">
-                      my background and motivations
-                    </ListItem>
                     <ListItem href="/skills" title="skills">
                       python, js, linux
                     </ListItem>

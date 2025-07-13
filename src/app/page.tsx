@@ -164,7 +164,7 @@ export default function Page() {
         <div className="space-y-4">
           <h2 className="text-4xl md:text-5xl font-bold">Let's Connect</h2>
           <p className="text-xl text-muted-foreground max-w-xl mx-auto">
-            Ready to collaborate on your next project or discuss opportunities? I'd love to hear from you.
+            Ready to collaborate on your next project or discuss opportunities? I&apos;d love to hear from you.
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">

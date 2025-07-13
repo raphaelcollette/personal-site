@@ -28,8 +28,8 @@ export default function Go4FriendsPage() {
             <Image
               src="/club.png"
               alt="Homepage screenshot"
-              width={500}
-              height={300}
+              width={800}
+              height={500}
               className="rounded-xl border"
             />
             <p className="text-sm text-muted-foreground">
@@ -47,8 +47,8 @@ export default function Go4FriendsPage() {
             <Image
               src="/profile.png"
               alt="Profile screenshot"
-              width={500}
-              height={300}
+              width={800}
+              height={500}
               className="rounded-xl border"
             />
             <p className="text-sm text-muted-foreground">
@@ -66,8 +66,8 @@ export default function Go4FriendsPage() {
             <Image
               src="/dm.png"
               alt="Messaging screenshot"
-              width={500}
-              height={300}
+              width={800}
+              height={500}
               className="rounded-xl border"
             />
             <p className="text-sm text-muted-foreground">

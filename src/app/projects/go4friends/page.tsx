@@ -22,18 +22,18 @@ export default function Go4FriendsPage() {
         {/* Feature 1 */}
         <Card className="hover:shadow-xl transition duration-300">
           <CardHeader>
-            <CardTitle className="text-lg">Homepage Feed</CardTitle>
+            <CardTitle className="text-lg">Club Profile</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
             <Image
-              src="/projects/go4friends/home.png"
+              src="/club.png"
               alt="Homepage screenshot"
               width={500}
               height={300}
               className="rounded-xl border"
             />
             <p className="text-sm text-muted-foreground">
-              Personalized content feed with posts, likes, and friend activity.
+              Public/Private clubs with member roles club-specific events
             </p>
           </CardContent>
         </Card>
@@ -45,14 +45,14 @@ export default function Go4FriendsPage() {
           </CardHeader>
           <CardContent className="space-y-4">
             <Image
-              src="/projects/go4friends/profile.png"
+              src="/profile.png"
               alt="Profile screenshot"
               width={500}
               height={300}
               className="rounded-xl border"
             />
             <p className="text-sm text-muted-foreground">
-              Users can customize bios, see friend lists, and recent activity.
+              Users can customize bios and add a profile picture
             </p>
           </CardContent>
         </Card>
@@ -64,14 +64,14 @@ export default function Go4FriendsPage() {
           </CardHeader>
           <CardContent className="space-y-4">
             <Image
-              src="/projects/go4friends/messages.png"
+              src="/dm.png"
               alt="Messaging screenshot"
               width={500}
               height={300}
               className="rounded-xl border"
             />
             <p className="text-sm text-muted-foreground">
-              Real-time chat between users, including notifications and status.
+              Polled chat between users and clubs, websockets are planned
             </p>
           </CardContent>
         </Card>

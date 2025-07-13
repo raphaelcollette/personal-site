@@ -162,7 +162,7 @@ export default function Page() {
       {/* Row 3 - Contact Section */}
       <section className="text-center space-y-8 py-16">
         <div className="space-y-4">
-          <h2 className="text-4xl md:text-5xl font-bold">Let's Connect</h2>
+          <h2 className="text-4xl md:text-5xl font-bold">Let&apos;s Connect</h2>
           <p className="text-xl text-muted-foreground max-w-xl mx-auto">
             Ready to collaborate on your next project or discuss opportunities? I&apos;d love to hear from you.
           </p>

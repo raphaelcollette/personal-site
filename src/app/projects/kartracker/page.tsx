@@ -43,13 +43,13 @@ export default function KartrackerPage() {
             </div>
           </div>
           <Card className="overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:scale-105">
-            <CardContent className="p-0">
-              <div className="relative aspect-video">
+            <CardContent className="p-4">
+              <div className="relative aspect-video rounded-lg overflow-hidden">
                 <Image
                   src="/guicorrect.png"
                   alt="OCR interface showing automatic result detection and error correction"
                   fill
-                  className="object-cover"
+                  className="object-contain bg-gray-50"
                 />
               </div>
             </CardContent>
@@ -59,13 +59,13 @@ export default function KartrackerPage() {
         {/* Feature 2 - Leaderboard System */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <Card className="overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:scale-105 lg:order-1">
-            <CardContent className="p-0">
-              <div className="relative aspect-video">
+            <CardContent className="p-4">
+              <div className="relative aspect-video rounded-lg overflow-hidden">
                 <Image
                   src="/leaderboard.png"
                   alt="Dynamic leaderboard showing player rankings and statistics"
                   fill
-                  className="object-cover"
+                  className="object-contain bg-gray-50"
                 />
               </div>
             </CardContent>
@@ -107,13 +107,13 @@ export default function KartrackerPage() {
             </div>
           </div>
           <Card className="overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:scale-105">
-            <CardContent className="p-0">
-              <div className="relative aspect-video">
+            <CardContent className="p-4">
+              <div className="relative aspect-video rounded-lg overflow-hidden">
                 <Image
                   src="/matchresults.png"
                   alt="Match results interface showing detailed race outcomes and Discord integration"
                   fill
-                  className="object-cover"
+                  className="object-contain bg-gray-50"
                 />
               </div>
             </CardContent>

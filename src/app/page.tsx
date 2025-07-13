@@ -173,7 +173,7 @@ export default function Page() {
             <Button 
               variant="default" 
               size="lg"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-6 text-lg"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-6 text-lg cursor-pointer"
             >
               Get In Touch
             </Button>
@@ -182,7 +182,7 @@ export default function Page() {
             <Button 
               variant="outline" 
               size="lg"
-              className="px-8 py-6 text-lg hover:bg-gray-50"
+              className="px-8 py-6 text-lg hover:bg-gray-50 cursor-pointer"
             >
               View Resume
             </Button>

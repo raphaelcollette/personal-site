@@ -14,7 +14,7 @@ export default function Go4FriendsPage() {
         <div className="inline-block px-4 py-2 bg-gradient-to-r from-blue-100 to-purple-100 rounded-full text-sm font-medium text-blue-700 mb-4">
           Social Network MVP
         </div>
-        <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r pb-8 from-blue-600 to-purple-600 bg-clip-text text-transparent">
+        <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r pb-4 from-blue-600 to-purple-600 bg-clip-text text-transparent">
           go4friends
         </h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">

@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Page() {
   return (
@@ -168,20 +169,24 @@ export default function Page() {
           </p>
         </div>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button 
-            variant="default" 
-            size="lg"
-            className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-6 text-lg"
-          >
-            Get In Touch
-          </Button>
-          <Button 
-            variant="outline" 
-            size="lg"
-            className="px-8 py-6 text-lg hover:bg-gray-50"
-          >
-            View Resume
-          </Button>
+          <Link href="/contact">
+            <Button 
+              variant="default" 
+              size="lg"
+              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 px-8 py-6 text-lg"
+            >
+              Get In Touch
+            </Button>
+          </Link>
+          <Link href="/resume">
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="px-8 py-6 text-lg hover:bg-gray-50"
+            >
+              View Resume
+            </Button>
+          </Link>
         </div>
       </section>
     </main>

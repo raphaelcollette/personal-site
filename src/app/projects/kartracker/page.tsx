@@ -18,7 +18,7 @@ export default function KartrackerPage() {
           kartracker
         </h1>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-          An automated Mario Kart leaderboard tracker that uses OCR technology, file monitoring, and Discord integration to capture race results and maintain competitive rankings in real-time.
+          A semi-automated Mario Kart leaderboard tracker that uses OCR technology, file monitoring, and Discord integration to capture race results and maintain competitive rankings in real-time.
         </p>
       </section>
 
@@ -32,9 +32,8 @@ export default function KartrackerPage() {
             </div>
             <h2 className="text-3xl md:text-4xl font-bold">Smart Result Detection</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Advanced OCR technology automatically captures and processes Mario Kart race results 
-              from screenshots. The system intelligently corrects common OCR errors and validates 
-              player data to ensure accurate race tracking without manual input.
+              Advanced OCR technology captures on a key press and processes Mario Kart race results 
+              from screenshots. The system brings up a GUI to confirm the results.
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">OCR Processing</span>
@@ -125,7 +124,7 @@ export default function KartrackerPage() {
       <section className="text-center space-y-8 py-16">
         <h2 className="text-3xl md:text-4xl font-bold">Built with Modern Tech</h2>
         <p className="text-lg text-muted-foreground max-w-xl mx-auto">
-          Powered by cutting-edge technologies for reliable, automated gaming analytics.
+          Powered entirely by Python.
         </p>
         <div className="flex flex-wrap justify-center gap-4 mt-8">
           <div className="px-6 py-3 bg-gradient-to-r from-red-50 to-red-100 rounded-full">
@@ -147,7 +146,7 @@ export default function KartrackerPage() {
       <section className="text-center space-y-6 py-16">
         <h2 className="text-3xl md:text-4xl font-bold">Ready to Track Your Races?</h2>
         <p className="text-lg text-muted-foreground max-w-xl mx-auto">
-          Transform your Mario Kart competitions with automated tracking and real-time leaderboards.
+          Transform your discord mario kart games with kartracker!
         </p>
       </section>
     </main>

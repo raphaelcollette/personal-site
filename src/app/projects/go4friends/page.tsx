@@ -33,8 +33,7 @@ export default function Go4FriendsPage() {
             <h2 className="text-3xl md:text-4xl font-bold">Club Profiles</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Create and manage public or private clubs with comprehensive member role management. 
-              Organize club-specific events, build communities, and foster meaningful connections 
-              within your college network.
+              Organize club-specific events and expand your college network!
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Public/Private Clubs</span>
@@ -77,8 +76,7 @@ export default function Go4FriendsPage() {
             <h2 className="text-3xl md:text-4xl font-bold">Profile Customization</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Express yourself with fully customizable profiles. Add personal bios, 
-              upload profile pictures, and showcase your interests to connect with 
-              like-minded students across your campus.
+              upload profile pictures, and showcase your interests.
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Custom Bios</span>
@@ -96,14 +94,13 @@ export default function Go4FriendsPage() {
             </div>
             <h2 className="text-3xl md:text-4xl font-bold">Messaging System</h2>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Stay connected with polled chat functionality between users and clubs. 
-              Enhanced with planned WebSocket integration for real-time messaging 
-              experiences that keep conversations flowing naturally.
+              Stay connected with polled chat functionality between users and clubs. Websockets coming soon!
+              
             </p>
             <div className="flex flex-wrap gap-2">
               <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Direct Messages</span>
               <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Club Chat</span>
-              <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">WebSocket Ready</span>
+              <span className="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-sm">Pinned Messages</span>
             </div>
           </div>
           <Card className="overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:scale-105">
@@ -125,7 +122,7 @@ export default function Go4FriendsPage() {
       <section className="text-center space-y-6 py-16">
         <h2 className="text-3xl md:text-4xl font-bold">Ready to Connect?</h2>
         <p className="text-lg text-muted-foreground max-w-xl mx-auto">
-          Join the go4friends community and start building meaningful connections on your campus today.
+          Join the go4friends community and improve your social life!
         </p>
       </section>
     </main>

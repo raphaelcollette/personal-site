@@ -8,9 +8,21 @@ import {
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import Link from "next/link"
+import Head from 'next/head'
 
 export default function Page() {
   return (
+    <>
+      <Head>
+          <title>Raphael Collette | Accounting, Programming, IT</title>
+          <meta name="description" content="Portfolio of Raphael Collette: student at the University of Minnesota specializing in accounting, programming, and IT. View my projects and skills." />
+          <meta name="robots" content="index, follow" />
+          <meta property="og:title" content="Raphael Collette | Accounting, Programming, IT" />
+          <meta property="og:description" content="Student at the University of Minnesota. Projects in finance, automation, and web dev." />
+          <meta property="og:url" content="https://raphaelcollette.site" />
+          <meta property="og:type" content="website" />
+      </Head>
+    
     <main className="mt-24 space-y-32 px-4 max-w-7xl mx-auto">
       {/* Row 1 - Hero Section */}
       <section className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[600px]">
@@ -189,5 +201,6 @@ export default function Page() {
         </div>
       </section>
     </main>
+    </>
   )
 }
